@@ -174,7 +174,7 @@ with tab1:
 
             # Run the modified script and capture output
             process = subprocess.Popen(
-                ["python", temp_path],
+                [f"{sys.executable}", temp_path],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
