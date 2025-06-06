@@ -41,109 +41,12 @@
     color: #ffffff !important;
 }
 
-/* ALERT FIXES - Using more specific selectors */
-.stAlert[data-baseweb="notification"] {
-    color: white !important;
+/* COMPREHENSIVE LIGHT MODE TEXT FIXES */
+[data-theme="light"] {
+    color: #262730 !important;
 }
 
-.stAlert[data-baseweb="notification"] * {
-    color: white !important;
-}
-
-.stAlert[data-baseweb="notification"] p {
-    color: white !important;
-}
-
-.stAlert[data-baseweb="notification"] div {
-    color: white !important;
-}
-
-/* Ultimate alert text fix with text-shadow backup */
-div[data-testid="stAlert"] {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-}
-
-div[data-testid="stAlert"] * {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-div[data-testid="stAlert"] > div {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-div[data-testid="stAlert"] > div > div {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-div[data-testid="stAlert"] p {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-div[data-testid="stAlert"] span {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-div[data-testid="stAlert"] div {
-    color: #ffffff !important;
-    --text-color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-/* Alternative selectors */
-.stAlert {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-}
-
-.stAlert * {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-/* Success specific */
-.stSuccess {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-}
-
-.stSuccess * {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-/* Info specific */
-.stInfo {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-}
-
-.stInfo * {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-/* Light mode text colors */
+/* All text elements in light mode */
 [data-theme="light"] .stMarkdown,
 [data-theme="light"] .stText,
 [data-theme="light"] p,
@@ -159,13 +62,209 @@ div[data-testid="stAlert"] div {
     color: #262730 !important;
 }
 
+/* ALERT FIXES FOR BOTH MODES */
+/* Dark mode alerts */
+[data-theme="dark"] .stAlert[data-baseweb="notification"] {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stAlert[data-baseweb="notification"] * {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stAlert[data-baseweb="notification"] p {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stAlert[data-baseweb="notification"] div {
+    color: #ffffff !important;
+}
+
 /* Light mode alerts */
-[data-theme="light"] .stAlert,
-[data-theme="light"] .stAlert *,
-[data-theme="light"] .stAlert p,
-[data-theme="light"] .stAlert span,
-[data-theme="light"] .stAlert div {
+[data-theme="light"] .stAlert[data-baseweb="notification"] {
     color: #262730 !important;
+}
+
+[data-theme="light"] .stAlert[data-baseweb="notification"] * {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stAlert[data-baseweb="notification"] p {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stAlert[data-baseweb="notification"] div {
+    color: #262730 !important;
+}
+
+/* Ultimate alert text fix with theme-specific colors */
+/* Dark mode alert fixes */
+[data-theme="dark"] div[data-testid="stAlert"] {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+[data-theme="dark"] div[data-testid="stAlert"] * {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+[data-theme="dark"] div[data-testid="stAlert"] > div {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+[data-theme="dark"] div[data-testid="stAlert"] > div > div {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+[data-theme="dark"] div[data-testid="stAlert"] p {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+[data-theme="dark"] div[data-testid="stAlert"] span {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+[data-theme="dark"] div[data-testid="stAlert"] div {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Light mode alert fixes */
+[data-theme="light"] div[data-testid="stAlert"] {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+}
+
+[data-theme="light"] div[data-testid="stAlert"] * {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] div[data-testid="stAlert"] > div {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] div[data-testid="stAlert"] > div > div {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] div[data-testid="stAlert"] p {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] div[data-testid="stAlert"] span {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] div[data-testid="stAlert"] div {
+    color: #262730 !important;
+    --text-color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+/* Success/Info/Warning specific fixes for dark mode */
+[data-theme="dark"] .stSuccess {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stSuccess * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+[data-theme="dark"] .stInfo {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stInfo * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+[data-theme="dark"] .stWarning {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stWarning * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+[data-theme="dark"] .stError {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stError * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+/* Success/Info/Warning specific fixes for light mode */
+[data-theme="light"] .stSuccess {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stSuccess * {
+    color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] .stInfo {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stInfo * {
+    color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] .stWarning {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stWarning * {
+    color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
+}
+
+[data-theme="light"] .stError {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stError * {
+    color: #262730 !important;
+    -webkit-text-fill-color: #262730 !important;
 }
 
 /* Alert styling that works in both modes */
@@ -173,6 +272,102 @@ div[data-testid="stAlert"] div {
     backdrop-filter: blur(10px);
     border-radius: 10px;
     animation: fadeIn 0.5s ease-out;
+}
+
+/* Comprehensive dark mode alert text fixes using multiple selectors */
+[data-theme="dark"] .stAlert,
+[data-theme="dark"] [data-testid="stAlert"],
+[data-theme="dark"] .element-container .stAlert,
+[data-theme="dark"] div[role="alert"] {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stAlert *,
+[data-theme="dark"] [data-testid="stAlert"] *,
+[data-theme="dark"] .element-container .stAlert *,
+[data-theme="dark"] div[role="alert"] * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+/* Additional comprehensive selectors for dark mode alerts */
+[data-theme="dark"] .stAlert > div,
+[data-theme="dark"] .stAlert > div > div,
+[data-theme="dark"] .stAlert p,
+[data-theme="dark"] .stAlert span,
+[data-theme="dark"] [data-testid="stAlert"] > div,
+[data-theme="dark"] [data-testid="stAlert"] > div > div,
+[data-theme="dark"] [data-testid="stAlert"] p,
+[data-theme="dark"] [data-testid="stAlert"] span {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+/* Force white text on all possible alert elements in dark mode */
+[data-theme="dark"] [data-baseweb="notification"],
+[data-theme="dark"] [data-baseweb="notification"] *,
+[data-theme="dark"] .stAlert[data-baseweb="notification"],
+[data-theme="dark"] .stAlert[data-baseweb="notification"] *,
+[data-theme="dark"] div[data-testid="stAlert"][data-baseweb="notification"],
+[data-theme="dark"] div[data-testid="stAlert"][data-baseweb="notification"] * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+/* Ultimate fallback for any alert text in dark mode */
+[data-theme="dark"] [class*="alert"] *,
+[data-theme="dark"] [class*="Alert"] *,
+[data-theme="dark"] [class*="notification"] *,
+[data-theme="dark"] [class*="Notification"] * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+/* Specific targeting for success messages */
+[data-theme="dark"] .element-container:has(.stSuccess) *,
+[data-theme="dark"] .element-container:has(.stAlert) * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+/* Nuclear option - force white text on ALL alert-related elements in dark mode */
+html[data-theme="dark"] .stAlert,
+html[data-theme="dark"] .stAlert *,
+html[data-theme="dark"] [data-testid="stAlert"],
+html[data-theme="dark"] [data-testid="stAlert"] *,
+html[data-theme="dark"] .stSuccess,
+html[data-theme="dark"] .stSuccess *,
+html[data-theme="dark"] .stInfo,
+html[data-theme="dark"] .stInfo *,
+html[data-theme="dark"] .stWarning,
+html[data-theme="dark"] .stWarning *,
+html[data-theme="dark"] .stError,
+html[data-theme="dark"] .stError *,
+html[data-theme="dark"] [data-baseweb="notification"],
+html[data-theme="dark"] [data-baseweb="notification"] * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Extra aggressive targeting with multiple selector combinations */
+[data-theme="dark"] div[class*="alert"],
+[data-theme="dark"] div[class*="alert"] *,
+[data-theme="dark"] div[class*="Alert"],
+[data-theme="dark"] div[class*="Alert"] *,
+[data-theme="dark"] div[class*="success"],
+[data-theme="dark"] div[class*="success"] *,
+[data-theme="dark"] div[class*="Success"],
+[data-theme="dark"] div[class*="Success"] * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
 }
 
 /* Container styling */
@@ -362,6 +557,24 @@ div[data-testid="stAlert"] div {
     color: #262730 !important;
 }
 
+/* Selectbox dropdown options */
+[data-theme="light"] .stSelectbox [data-baseweb="select"] {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stSelectbox [data-baseweb="select"] > div {
+    color: #262730 !important;
+}
+
+/* Slider text and values */
+[data-theme="light"] .stSlider > div > div > div {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stSlider [data-testid="stSliderTooltip"] {
+    color: #262730 !important;
+}
+
 /* Spinner text */
 [data-theme="dark"] .stSpinner > div {
     color: #ffffff !important;
@@ -369,6 +582,43 @@ div[data-testid="stAlert"] div {
 
 [data-theme="light"] .stSpinner > div {
     color: #262730 !important;
+}
+
+/* Header text fixes */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+    color: #262730 !important;
+}
+
+/* Markdown text fixes for light mode */
+[data-theme="light"] .stMarkdown {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stMarkdown p {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stMarkdown div {
+    color: #262730 !important;
+}
+
+/* Text input placeholder and help text */
+[data-theme="light"] .stTextInput > div > div > input::placeholder {
+    color: #666666 !important;
+}
+
+[data-theme="light"] .stTextInput small {
+    color: #666666 !important;
+}
+
+/* Button help text */
+[data-theme="light"] .stButton small {
+    color: #666666 !important;
 }
 
 /* Footer text */
@@ -380,7 +630,7 @@ div[data-testid="stAlert"] div {
     color: #666666 !important;
 }
 
-/* Ensure button text remains white */
+/* Ensure button text remains white in both modes */
 [data-theme="dark"] .stButton button,
 [data-theme="dark"] .stDownloadButton button {
     color: #ffffff !important;
@@ -389,4 +639,73 @@ div[data-testid="stAlert"] div {
 [data-theme="light"] .stButton button,
 [data-theme="light"] .stDownloadButton button {
     color: #ffffff !important;
+}
+
+/* Expand/collapse button text */
+[data-theme="light"] .streamlit-expanderHeader {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .streamlit-expanderContent {
+    color: #262730 !important;
+}
+
+/* Code block text in light mode */
+[data-theme="light"] .stCode {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stCode code {
+    color: #262730 !important;
+}
+
+/* Caption text */
+[data-theme="light"] .stCaption {
+    color: #666666 !important;
+}
+
+/* Metric text */
+[data-theme="light"] .stMetric {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stMetric > div {
+    color: #262730 !important;
+}
+
+/* Table text */
+[data-theme="light"] .stDataFrame {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .stDataFrame table {
+    color: #262730 !important;
+}
+
+/* JSON text */
+[data-theme="light"] .stJson {
+    color: #262730 !important;
+}
+
+/* Additional text element fixes for comprehensive coverage */
+[data-theme="light"] .element-container {
+    color: #262730 !important;
+}
+
+[data-theme="light"] .element-container * {
+    color: #262730 !important;
+}
+
+/* Override any remaining text visibility issues */
+[data-theme="light"] .stApp > div > div {
+    color: #262730 !important;
+}
+
+/* Ensure proper contrast for all interactive elements */
+[data-theme="light"] [data-testid="stSidebar"] {
+    color: #262730 !important;
+}
+
+[data-theme="light"] [data-testid="stSidebar"] * {
+    color: #262730 !important;
 }
