@@ -20,11 +20,12 @@
     animation: fadeIn 0.5s ease-out;
 }
 
-/* Dark mode text color fixes */
+/* COMPREHENSIVE DARK MODE TEXT FIXES */
 [data-theme="dark"] {
     color: #ffffff !important;
 }
 
+/* All text elements in dark mode */
 [data-theme="dark"] .stMarkdown,
 [data-theme="dark"] .stText,
 [data-theme="dark"] p,
@@ -35,8 +36,111 @@
 [data-theme="dark"] h3,
 [data-theme="dark"] h4,
 [data-theme="dark"] h5,
-[data-theme="dark"] h6 {
+[data-theme="dark"] h6,
+[data-theme="dark"] label {
     color: #ffffff !important;
+}
+
+/* ALERT FIXES - Using more specific selectors */
+.stAlert[data-baseweb="notification"] {
+    color: white !important;
+}
+
+.stAlert[data-baseweb="notification"] * {
+    color: white !important;
+}
+
+.stAlert[data-baseweb="notification"] p {
+    color: white !important;
+}
+
+.stAlert[data-baseweb="notification"] div {
+    color: white !important;
+}
+
+/* Ultimate alert text fix with text-shadow backup */
+div[data-testid="stAlert"] {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+div[data-testid="stAlert"] * {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+div[data-testid="stAlert"] > div {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+div[data-testid="stAlert"] > div > div {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+div[data-testid="stAlert"] p {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+div[data-testid="stAlert"] span {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+div[data-testid="stAlert"] div {
+    color: #ffffff !important;
+    --text-color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Alternative selectors */
+.stAlert {
+    color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+.stAlert * {
+    color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Success specific */
+.stSuccess {
+    color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+.stSuccess * {
+    color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Info specific */
+.stInfo {
+    color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+}
+
+.stInfo * {
+    color: #ffffff !important;
+    text-shadow: 0 0 1px #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 /* Light mode text colors */
@@ -50,7 +154,17 @@
 [data-theme="light"] h3,
 [data-theme="light"] h4,
 [data-theme="light"] h5,
-[data-theme="light"] h6 {
+[data-theme="light"] h6,
+[data-theme="light"] label {
+    color: #262730 !important;
+}
+
+/* Light mode alerts */
+[data-theme="light"] .stAlert,
+[data-theme="light"] .stAlert *,
+[data-theme="light"] .stAlert p,
+[data-theme="light"] .stAlert span,
+[data-theme="light"] .stAlert div {
     color: #262730 !important;
 }
 
@@ -59,56 +173,6 @@
     backdrop-filter: blur(10px);
     border-radius: 10px;
     animation: fadeIn 0.5s ease-out;
-}
-
-/* Dark mode alerts - comprehensive fix */
-[data-theme="dark"] .stAlert,
-[data-theme="dark"] .stAlert p,
-[data-theme="dark"] .stAlert span,
-[data-theme="dark"] .stAlert div,
-[data-theme="dark"] .st-emotion-cache-16idsys p, 
-[data-theme="dark"] .st-emotion-cache-7ym5gk, 
-[data-theme="dark"] .st-emotion-cache-16idsys,
-[data-theme="dark"] .st-alert > div,
-[data-theme="dark"] .st-alert p,
-[data-theme="dark"] .element-container .stAlert p {
-    color: #ffffff !important;
-}
-
-/* Light mode alerts */
-[data-theme="light"] .stAlert,
-[data-theme="light"] .stAlert p,
-[data-theme="light"] .stAlert span,
-[data-theme="light"] .stAlert div {
-    color: #262730 !important;
-}
-
-/* Success alert specific colors */
-[data-theme="dark"] .stSuccess,
-[data-theme="dark"] .stSuccess p,
-[data-theme="dark"] .stSuccess div {
-    color: #ffffff !important;
-}
-
-/* Error alert specific colors */
-[data-theme="dark"] .stError,
-[data-theme="dark"] .stError p,
-[data-theme="dark"] .stError div {
-    color: #ffffff !important;
-}
-
-/* Warning alert specific colors */
-[data-theme="dark"] .stWarning,
-[data-theme="dark"] .stWarning p,
-[data-theme="dark"] .stWarning div {
-    color: #ffffff !important;
-}
-
-/* Info alert specific colors */
-[data-theme="dark"] .stInfo,
-[data-theme="dark"] .stInfo p,
-[data-theme="dark"] .stInfo div {
-    color: #ffffff !important;
 }
 
 /* Container styling */
@@ -298,22 +362,6 @@
     color: #262730 !important;
 }
 
-/* Headers in dark mode */
-[data-theme="dark"] .stHeader,
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3 {
-    color: #ffffff !important;
-}
-
-/* Headers in light mode */
-[data-theme="light"] .stHeader,
-[data-theme="light"] h1,
-[data-theme="light"] h2,
-[data-theme="light"] h3 {
-    color: #262730 !important;
-}
-
 /* Spinner text */
 [data-theme="dark"] .stSpinner > div {
     color: #ffffff !important;
@@ -332,19 +380,10 @@
     color: #666666 !important;
 }
 
-/* Fix for any remaining text visibility issues */
-[data-theme="dark"] * {
-    color: #ffffff;
-}
-
+/* Ensure button text remains white */
 [data-theme="dark"] .stButton button,
 [data-theme="dark"] .stDownloadButton button {
     color: #ffffff !important;
-}
-
-/* Ensure light mode text remains readable */
-[data-theme="light"] * {
-    color: #262730;
 }
 
 [data-theme="light"] .stButton button,
