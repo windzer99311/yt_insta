@@ -1,4 +1,3 @@
-
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -21,6 +20,40 @@
     animation: fadeIn 0.5s ease-out;
 }
 
+/* Dark mode text color fixes */
+[data-theme="dark"] {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .stMarkdown,
+[data-theme="dark"] .stText,
+[data-theme="dark"] p,
+[data-theme="dark"] span,
+[data-theme="dark"] div,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: #ffffff !important;
+}
+
+/* Light mode text colors */
+[data-theme="light"] .stMarkdown,
+[data-theme="light"] .stText,
+[data-theme="light"] p,
+[data-theme="light"] span,
+[data-theme="light"] div,
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+    color: #262730 !important;
+}
+
 /* Alert styling that works in both modes */
 .stAlert {
     backdrop-filter: blur(10px);
@@ -28,21 +61,54 @@
     animation: fadeIn 0.5s ease-out;
 }
 
-/* Specifically for dark mode alerts */
-[data-theme="dark"] .stAlert p {
-    color: white !important;
-}
-
-/* Fix for info alerts in dark mode */
+/* Dark mode alerts - comprehensive fix */
+[data-theme="dark"] .stAlert,
+[data-theme="dark"] .stAlert p,
+[data-theme="dark"] .stAlert span,
+[data-theme="dark"] .stAlert div,
 [data-theme="dark"] .st-emotion-cache-16idsys p, 
 [data-theme="dark"] .st-emotion-cache-7ym5gk, 
-[data-theme="dark"] .st-emotion-cache-16idsys {
-    color: white !important;
+[data-theme="dark"] .st-emotion-cache-16idsys,
+[data-theme="dark"] .st-alert > div,
+[data-theme="dark"] .st-alert p,
+[data-theme="dark"] .element-container .stAlert p {
+    color: #ffffff !important;
 }
 
 /* Light mode alerts */
-[data-theme="light"] .stAlert p {
-    color: #31333F !important;
+[data-theme="light"] .stAlert,
+[data-theme="light"] .stAlert p,
+[data-theme="light"] .stAlert span,
+[data-theme="light"] .stAlert div {
+    color: #262730 !important;
+}
+
+/* Success alert specific colors */
+[data-theme="dark"] .stSuccess,
+[data-theme="dark"] .stSuccess p,
+[data-theme="dark"] .stSuccess div {
+    color: #ffffff !important;
+}
+
+/* Error alert specific colors */
+[data-theme="dark"] .stError,
+[data-theme="dark"] .stError p,
+[data-theme="dark"] .stError div {
+    color: #ffffff !important;
+}
+
+/* Warning alert specific colors */
+[data-theme="dark"] .stWarning,
+[data-theme="dark"] .stWarning p,
+[data-theme="dark"] .stWarning div {
+    color: #ffffff !important;
+}
+
+/* Info alert specific colors */
+[data-theme="dark"] .stInfo,
+[data-theme="dark"] .stInfo p,
+[data-theme="dark"] .stInfo div {
+    color: #ffffff !important;
 }
 
 /* Container styling */
@@ -62,6 +128,20 @@
 .st-emotion-cache-16b5j9s input:focus {
     border-color: #F56040 !important;
     box-shadow: 0 0 15px rgba(245, 96, 64, 0.3);
+}
+
+/* Dark mode input text */
+[data-theme="dark"] input,
+[data-theme="dark"] .st-emotion-cache-16b5j9s input,
+[data-theme="dark"] textarea {
+    color: #ffffff !important;
+}
+
+/* Light mode input text */
+[data-theme="light"] input,
+[data-theme="light"] .st-emotion-cache-16b5j9s input,
+[data-theme="light"] textarea {
+    color: #262730 !important;
 }
 
 /* Button styles with hover animation */
@@ -107,7 +187,16 @@
     font-size: 1.3rem;
     margin-bottom: 2rem;
     animation: fadeIn 0.8s ease-out;
-    /* Removing the color forcing to work with both themes */
+}
+
+/* Dark mode subtitle */
+[data-theme="dark"] .app-subtitle {
+    color: #e0e0e0 !important;
+}
+
+/* Light mode subtitle */
+[data-theme="light"] .app-subtitle {
+    color: #666666 !important;
 }
 
 /* Video frame styling */
@@ -167,4 +256,98 @@
     border: none !important;
     box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
     color: white !important;
+}
+
+/* Tab text colors */
+[data-theme="dark"] .stTabs [data-baseweb="tab"] {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .stTabs [data-baseweb="tab"] {
+    color: #262730 !important;
+}
+
+/* Progress bar text */
+[data-theme="dark"] .stProgress > div > div {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .stProgress > div > div {
+    color: #262730 !important;
+}
+
+/* Selectbox and other form elements */
+[data-theme="dark"] .stSelectbox label,
+[data-theme="dark"] .stSlider label,
+[data-theme="dark"] .stTextInput label {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .stSelectbox label,
+[data-theme="light"] .stSlider label,
+[data-theme="light"] .stTextInput label {
+    color: #262730 !important;
+}
+
+/* Selectbox dropdown text */
+[data-theme="dark"] .stSelectbox > div > div > div {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .stSelectbox > div > div > div {
+    color: #262730 !important;
+}
+
+/* Headers in dark mode */
+[data-theme="dark"] .stHeader,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+    color: #ffffff !important;
+}
+
+/* Headers in light mode */
+[data-theme="light"] .stHeader,
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3 {
+    color: #262730 !important;
+}
+
+/* Spinner text */
+[data-theme="dark"] .stSpinner > div {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .stSpinner > div {
+    color: #262730 !important;
+}
+
+/* Footer text */
+[data-theme="dark"] hr + .stMarkdown p {
+    color: #cccccc !important;
+}
+
+[data-theme="light"] hr + .stMarkdown p {
+    color: #666666 !important;
+}
+
+/* Fix for any remaining text visibility issues */
+[data-theme="dark"] * {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .stButton button,
+[data-theme="dark"] .stDownloadButton button {
+    color: #ffffff !important;
+}
+
+/* Ensure light mode text remains readable */
+[data-theme="light"] * {
+    color: #262730;
+}
+
+[data-theme="light"] .stButton button,
+[data-theme="light"] .stDownloadButton button {
+    color: #ffffff !important;
 }
