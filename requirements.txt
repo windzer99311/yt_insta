@@ -1,8 +1,7 @@
-streamlit>=1.44.1
-pytubefix>=8.12.3
-colorama>=0.4.6
-requests>=2.32.3
-urllib3>=2.4.0
+streamlit
+pytubefix
+colorama
+requests
 aiofiles
 asyncio
 aiohttp
