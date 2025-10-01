@@ -6,7 +6,7 @@ from natsort import natsorted  # pip install natsort
 def combine_chunks(extension):
 
     part_files = natsorted([f for f in os.listdir() if f.endswith(f".{extension}") and f.startswith(f"{extension}_part")])
-    output_file = f"{extension}.{'mp4' if extension=='mp4' else 'm4a'}"
+    output_file = f"Video.{'mp4' if extension=='mp4' else 'm4a'}"
 
     with open(f"{extension}_concat.bin", 'wb') as wfd:
         for f in part_files:
