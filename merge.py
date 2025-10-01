@@ -32,8 +32,9 @@ def merge_video_audio(video_file, audio_file, output_file="output.mp4"):
         output_file
         ]
     subprocess.run(cmd)
+    os.remove(video_file)
+    os.remove(audio_file)
     print(f"🎬 Merged video+audio into {output_file}")
     with open(output_file,'rb') as f:
         video_byte=f.read()
     return "✅ Merging complete!",video_byte
-
