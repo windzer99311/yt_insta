@@ -64,7 +64,7 @@ if url:
                         progress_cb=update_combined_bar
                     ))
 
-                    safe_title = re.sub(r'[/:*?\"<>|]', '', video_title)
+                    safe_title = "test"
                     video_file = combine_chunks("mp4")
                     audio_file = combine_chunks("m4a")
                     status=merge_video_audio(video_file, audio_file,f'{safe_title}.mp4')
