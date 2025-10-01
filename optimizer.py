@@ -1,7 +1,8 @@
 from pytubefix import YouTube
+video_stream_list=[]
 def video_metadata(link):
     yt = YouTube(link)
-    video_stream_list=[]
+
     # Collect basic info quickly
     video_title = yt.title
     video_length = yt.length
