@@ -67,18 +67,18 @@ if url:
                     safe_title = "test"
                     video_file = combine_chunks("mp4")
                     audio_file = combine_chunks("m4a")
-                    status=merge_video_audio(video_file, audio_file,f'{safe_title}.mp4')
-
-                st.success(status[0])
-                save_video = st.download_button(
+                    
+                    save_video = st.download_button(
                     label="💾 Save Video",
-                    data=status[1],
+                    data=video_file,
                     file_name=f"{safe_title}.mp4",
                     mime="video/mp4"
                 )
+                   
                 if os.path.exists(f'{safe_title}.mp4'):
                     os.remove(f'{safe_title}.mp4')
     except RegexMatchError:
         st.error("❌ Invalid YouTube URL. Please check and try again.")
     except Exception as e:
         st.error(f"⚠ Unexpected error: {e}")
+
