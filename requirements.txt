@@ -5,3 +5,4 @@ requests
 aiofiles
 asyncio
 aiohttp
+natsorted
